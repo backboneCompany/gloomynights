@@ -1,0 +1,263 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+}
+
+body {
+    margin: 0px;
+    background: #000000;
+}
+
+.mainText{
+    width: calc(50% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.mainText h1{
+    font-size: 45pt;
+    color: #B80606;
+    margin: 0px;
+    margin-left: 65px;
+}
+.mainText h2, label{
+    color: #ffffff;
+    margin: 0px;
+    margin-left: 65px;
+}
+.mainText h2{
+    font-size: 26pt;
+}
+
+.mainText label{
+    font-size: 11pt;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 20px;
+}
+.stories h1{
+    color: #B80606;
+    text-align: center;
+    font-size: 30pt;
+}
+
+.stories label{
+    margin: 0px;
+    display: flex;
+    color: #FFF;
+    text-align: center;
+    font-size: 12pt;
+    justify-content: center;
+}
+
+.stories{
+    align-items: center;
+    justify-content: center;
+}
+.logoVideogame{
+    width: calc(50% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.logoVideogame img{
+    width: 360px;
+}
+
+.data {
+    width: calc(50% - 20px);
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data input, .textStory input{
+    width: 510px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.textStory input{
+    padding-bottom: 60px;
+}
+
+.data button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #B80606;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+header{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: #000000;
+
+}
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    background-image: url('images/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#header-left, #header-center, #header-right{
+    position: relative;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+}
+
+#header-center, #header-left, #header-right{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#header-left{
+    margin-left: 5px;
+    float: left;
+}
+
+#header-center{
+    float: left;
+}
+
+#header-right{
+    margin-right: 5px;
+    float: right;
+}
+
+#header-menu, #header-logo{
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    
+}
+#header-menu h1{
+    color: #B80606;
+}
+#header-logo{
+    height: 40px;
+}
+#header-logo img{
+    height: 100%;
+}
+header-logo {
+    width: 40px;
+    height: 24px;;
+}
+
+#user-photo, #user-icons {
+    position: relative;
+    float: right;
+}
+
+#user-photo{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+#user-photo img{
+    height: 100%;
+    border-radius: 12px;
+}
+
+#user-icons {
+    height: 20px;
+    margin-right: 5px;
+}
+#user-icons i{
+    margin-right: 5px;
+}
+.icon{
+    font-size: 16pt;
+}
+
+.icon-light{
+    color: #EEE;
+}
+.icon-clickable{
+    cursor: pointer;
+}
+.icon-clickable-hover{
+    color: #FFF;
+}
+
+.options, .login{
+    background-color: transparent;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px;
+}
+
+.options:active, .login:active {
+    text-decoration: underline;
+}
+
+.options:hover, .login:hover {
+    color: #B80606;
+}
+
+
+@media only screen and (min-width: 640px){
+    .game{
+        width: calc(50% - 20px);
+    }
+    .team-name label{
+        display: none;
+    }
+    }
+
+@media only screen and (min-width: 768px){
+.team-name label{
+    display: block;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .game{
+        width: calc(33.3% - 20px);
+    }
+
+    .team-name{
+        width: calc(100% - 110px);
+    }
+    
+    .team-score{
+        width: 50px;
+    }
+
+}
+
