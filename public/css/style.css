@@ -59,10 +59,11 @@ body {
     justify-content: center;
 }
 
-.stories{
+.stories, .login{
     align-items: center;
     justify-content: center;
 }
+
 .logoVideogame{
     width: calc(50% - 20px);
     display: flex;
