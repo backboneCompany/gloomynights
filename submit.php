@@ -22,9 +22,9 @@ $story = $_POST['story'];
 $sql = "INSERT INTO stories (name, email, phone, story) VALUES ('$name', '$email', '$phone', '$story')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Historia guardada exitosamente.";
+    alert "Historia guardada exitosamente.";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    alert "Error: " . $sql . "<br>" . $conn->error;
 }
 
 // Cerrar conexión
