@@ -13,13 +13,13 @@ if ($conn->connect_error) {
 }
 
 // Obtener datos del formulario
-$nombre = $_POST['nombre'];
+$name = $_POST['name'];
 $email = $_POST['email'];
-$telefono = $_POST['telefono'];
-$historia = $_POST['historia'];
+$phone = $_POST['phone'];
+$story = $_POST['story'];
 
 // Insertar datos en la base de datos
-$sql = "INSERT INTO historias (nombre, email, telefono, historia) VALUES ('$nombre', '$email', '$telefono', '$historia')";
+$sql = "INSERT INTO stories (name, email, phone, story) VALUES ('$name', '$email', '$phone', '$story')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Historia guardada exitosamente.";
