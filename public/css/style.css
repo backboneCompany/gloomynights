@@ -44,7 +44,7 @@ body {
     height: 100%;
     padding: 20px;
 }
-.stories h1{
+.stories h1, .login h1{
     color: #B80606;
     text-align: center;
     font-size: 30pt;
@@ -59,7 +59,20 @@ body {
     justify-content: center;
 }
 
-.stories, .login{
+.stories{
+    height: 100vh;
+}
+
+
+.share-stories{
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -85,19 +98,26 @@ body {
     align-items: center;
 }
 
-.data input, .textStory input{
-    width: 510px;
+.data input, .textStory input, .login input{
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+.data input, .textStory{
+    width: 510px;
+}
+
+.login input{
+    width: 300px;
+}
+
 .textStory input{
     padding-bottom: 60px;
 }
 
-.data button {
+.data button, .login button{
     padding: 10px;
     border: none;
     border-radius: 8px;
@@ -108,11 +128,15 @@ body {
 }
 
 header{
+    position: fixed !important; /* Fija el header en la parte superior */
+    top: 0; /* Posición en la parte superior de la página */
+    left: 0; /* Posición en el lado izquierdo */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
     position: relative;
     float: left;
     width: 100%;
     height: 50px;
-    background: #000000;
+    background: #0000003d;
 
 }
 .content {
@@ -212,7 +236,7 @@ header-logo {
     color: #FFF;
 }
 
-.options, .login{
+.options, .sign-up{
     background-color: transparent;
     font-weight: bold;
     color: #ffffff;
@@ -223,11 +247,19 @@ header-logo {
     margin: 15px;
 }
 
-.options:active, .login:active {
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.options:active, .sign-up:active {
     text-decoration: underline;
 }
 
-.options:hover, .login:hover {
+.options:hover, .sign-up:hover {
     color: #B80606;
 }
 
